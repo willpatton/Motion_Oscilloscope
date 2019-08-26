@@ -1,6 +1,6 @@
-Motion Audio Computer/Oscilloscope
+Motion Audio Analyzer/Visualizer and Oscilloscope
 ===========
-This project is an audio analyzer and/or oscillosope used to visualize waveforms, make measurements, and detect events. It samples audio signals using a processor's analog-to-digital (ADC) to sample waveforms.  Waveforms can then be analyzed, displayed, or recorded.
+This library is an audio analyzer and/or oscillosope used to visualize waveforms, make measurements, and detect events. It samples audio signals using a processor's analog-to-digital (ADC) to sample waveforms.  Waveforms can then be analyzed, displayed, or recorded.
 
 ## Applications
 
@@ -51,19 +51,6 @@ A basic oscilloscope screen consists of these capabilities:
 ## Screen
 
 ![Motion Oscilloscope Text Waveform](https://github.com/willpatton/Motion_Oscilloscope/blob/master/motion_oscilloscope_text_waveform.png)
-
-256x64, 16K pixels
-+--------------------------------------------------------+
-|1.25Vpp                                            21 Hz| measurements, refresh rate
-|-                  ___              _   . . . . . . . . | cursors
-|                  /   \            / \                  | 
-|-/\  ____________/     \       /\_/   \_/\  ___________ | waveform - 0V GND
-|   \/                   \     /           \/            |
-|-	                      \___/                          |
-|1V/div                           	              1ms/div| controls
-+--------------------------------------------------------+
- \
-  \____ trigger: zero crossing rising edge
 
 
 ## SOFTWARE

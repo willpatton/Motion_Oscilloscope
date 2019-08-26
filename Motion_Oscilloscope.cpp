@@ -7,6 +7,19 @@
  * @license:  MIT License
 
 
+256x64, 16K pixels
++--------------------------------------------------------+
+|1.25Vpp                                            21 Hz| measurements, refresh rate
+|-                  ___              _   . . . . . . . . | cursors
+|                  /   \            / \                  | 
+|-/\  ____________/     \       /\_/   \_/\  ___________ | waveform - 0V GND
+|   \/                   \     /           \/            |
+|-                        \___/                          |
+|1V/div                                           1ms/div| controls
++--------------------------------------------------------+
+ \
+  \____ trigger: zero crossing rising edge
+
 
  */
 
