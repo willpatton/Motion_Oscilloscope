@@ -1,6 +1,6 @@
 Motion Audio Computer/Oscilloscope
 ===========
-An audio computer/oscillosope used to visualize waveforms, make measurements, and detect events.
+This project is an audio analyzer and/or oscillosope used to visualize waveforms, make measurements, and detect events. It samples audio signals using a processor's analog-to-digital (ADC) to sample waveforms.  Waveforms can then be analyzed, displayed, or recorded.
 
 ## Applications
 
