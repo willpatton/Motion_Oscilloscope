@@ -1,6 +1,6 @@
 Motion Audio Analyzer/Visualizer and Oscilloscope
 ===========
-This library is an audio analyzer and/or oscillosope used to visualize waveforms, make measurements, and detect events. It samples audio signals using a processor's analog-to-digital (ADC) to sample waveforms.  Waveforms can then be analyzed, displayed, or recorded.
+This library is an audio analyzer and/or oscilloscope used to visualize waveforms, make measurements, and detect events. It samples audio signals using a processor's analog-to-digital (ADC) to sample waveforms.  Waveforms can then be analyzed, displayed, or recorded.
 
 ## Applications
 
@@ -43,13 +43,13 @@ An example program is included in the examples folder.
 A basic oscilloscope screen consists of these capabilities:
 * Waveform
 * Verticle volts per division
-* Horizontial time per division
+* Horizontal time per division
 * Measurements - peak-to-peak
-* Trigger on zero crossing, rising edge
+* Trigger on zero-crossing, rising/falling edge
 * Refresh rate
 
-## Screen
-
+## Oscilloscope
+The oscilloscope feature is a 256x64 screen (16K pixels) divided into 10 horizontal time divisions (1ms/div) and 4 verticle voltage divisions (1V/div). A waveform acquisition is triggered by sensing the signal's zero-crossing point and looking for a rising or falling edge.  Once triggered, a memory buffer is filled with the samples that represent the waveform acquisition. Then, the buffer is analyzed for peaks and patterns thus making automatic measurements of the waveform. Next, the buffer's samples are rendered to the graphics display where 1 sample is rendered as 1 pixel (1:1).  The w
 ![Motion Oscilloscope Text Waveform](https://github.com/willpatton/Motion_Oscilloscope/blob/master/motion_oscilloscope_text_waveform.png)
 
 
@@ -60,7 +60,7 @@ IDE: Arduino IDE or similar.
 
 SOURCE: Files .ino, .h, .cpp 
 
-LIBRARY: This code is organized as an installable Arduino library and is listed as "Motion Audio Computer/Oscilloscope".  Copy this library into the Arduino libraries folder and #include the Motion_Oscilloscope.h file into your progam. 
+LIBRARY: This code is organized as an installable Arduino library and is listed as "Motion Audio Computer/Oscilloscope".  Copy this library into the Arduino libraries folder and #include the Motion_Oscilloscope.h file into your program. 
 
 GRAPHICS LIBRARY: Uses the U8G2 library.
 
