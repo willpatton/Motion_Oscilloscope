@@ -50,6 +50,8 @@ A basic oscilloscope screen consists of these capabilities:
 
 ## Screen
 
+![Motion Oscilloscope Text Waveform](https://github.com/willpatton/Motion_Oscilloscope/blob/master/motion_oscilloscope_text_waveform.png)
+
 256x64, 16K pixels
 +--------------------------------------------------------+
 |1.25Vpp                                            21 Hz| measurements, refresh rate
