@@ -40,7 +40,7 @@ extern U8G2_SSD1322_NHD_256X64_2_4W_HW_SPI u8g2;
 #endif
 
 //HORIZ - SAMPLES
-#define SAMPLES   384  	//256 	(1:1) optimized for 1 sample per 1 pixel
+#define SAMPLES   384  	//256 ≠	(1:1) optimized for 1 sample per 1 pixel
 					    //384   (1.5:1) optimized for refresh
 					    //512 	(2:1) 
 						//640 	(2.5:1) optimized for 1msec per division
@@ -55,7 +55,7 @@ class OSCILLOSCOPE
 
 public:
 	
-	bool detected = false;   //true if hardware detected
+	bool detected = true;   //true to force hardware detected. Default is false to allow detection.
 
 	//prototypes
 	OSCILLOSCOPE();

@@ -80,6 +80,8 @@ bool OSCILLOSCOPE::begin(){
   
   Serial.print("Detecting oscilloscope... ");
 
+  if(detected){return true;} //overrides detection if already set to true. Default is false.
+
   //debug
   if(0){
     Serial.print("\nbit_depth: ");Serial.println(bit_depth);
